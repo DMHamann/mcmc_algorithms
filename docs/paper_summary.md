@@ -154,8 +154,6 @@ sampler steps.
 *(Repo: `stochastic_volatility_example.py`.)*
 
 ## 6. Discussion / Limitations
-￼Später einrichten
-
 
 - Accept-Reject is simple to implement and easy to prove correct, but its
   acceptance rate degrades exponentially with dimension — impractical for
@@ -178,22 +176,4 @@ sampler steps.
 
 ## References
 
-- Cappé, O., Moulines, E., & Rydén, T. (2005). *Inference in Hidden Markov
-  Models.* Springer. — primary theoretical reference throughout.
-- Metropolis, N., Rosenbluth, A. W., Rosenbluth, M. N., Teller, A. H., &
-  Teller, E. (1953). *Equation of State Calculations by Fast Computing
-  Machines.* Journal of Chemical Physics, 21(6), 1087–1092.
-- Hastings, W. K. (1970). *Monte Carlo Sampling Methods Using Markov Chains
-  and Their Applications.* Biometrika, 57(1), 97–109.
-- Geman, S., & Geman, D. (1984). *Stochastic Relaxation, Gibbs Distributions,
-  and the Bayesian Restoration of Images.* IEEE Transactions on Pattern
-  Analysis and Machine Intelligence, 6(6), 721–741.
-- Mengersen, K. L., & Tweedie, R. L. (1996). *Rates of Convergence of the
-  Hastings and Metropolis Algorithms.* Annals of Statistics, 24(1), 101–121.
-- Robert, C. P., & Casella, G. (2004). *Monte Carlo Statistical Methods.*
-  Springer.
-- Hull, J., & White, A. (1987). *The Pricing of Options on Assets with
-  Stochastic Volatilities.* Journal of Finance, 42(2), 281–300.
-- Jacquier, E., Polson, N. G., & Rossi, P. E. (2002). *Bayesian Analysis of
-  Stochastic Volatility Models.* Journal of Business & Economic Statistics,
-  20(1), 69–87.
+Full bibliography: [references.md](references.md)
