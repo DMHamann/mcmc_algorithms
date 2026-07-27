@@ -1,2 +1,4 @@
-# Runtime dependencies
-numpy
+matplotlib==3.11.1
+numpy==2.5.1
+scipy==1.18.0
+tqdm==4.70.0
