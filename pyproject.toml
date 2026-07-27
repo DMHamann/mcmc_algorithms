@@ -7,7 +7,16 @@ name = "mcmc_algorithms"
 version = "0.1.0"
 description = ""
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "tqdm",
+    "ipykernel",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
