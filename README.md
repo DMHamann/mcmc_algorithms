@@ -79,7 +79,7 @@ figures referenced in `docs/paper_summary.md`.
 
 ## References
 
-Full citations in [`docs/references.md`](docs/references.md). This repository
+This is an AI summary. Full citations in [`docs/references.md`](docs/references.md). This repository
 implements and extends the methodology developed in my Bachelor's thesis,
 *Markov Chain Monte Carlo Methods for Inference in Hidden Markov Models*
 (Freie Universität Berlin, 2024).
