@@ -13,7 +13,7 @@ with an application to smoothing in a stochastic-volatility hidden Markov model.
 
 ## 1. Motivation: why simulate at all?
 
-Hidden Markov Models (HMMs) consist of a hidden Markov chain $\{X_k\}_{k \geq 0}$
+Hidden Markov Models (HMMs) consist of a hidden Markov chain $ \{X_k\}_{k \geq 0} $
 observed only indirectly through a related process $\{Y_k\}_{k \geq 0}$, where
 $Y_k$'s distribution depends on $X_k$. A central inference problem — called
 **smoothing** — is computing the conditional distribution of the hidden states
@@ -175,5 +175,5 @@ sampler steps.
   wouldn't scale as a validation strategy for problems with unknown targets.
 
 ## References
-
+This is an AI summary of my thesis [docs/thesis.pdf](docs/thesis.pdf).
 Full bibliography: [references.md](references.md)
