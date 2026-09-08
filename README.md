@@ -1,32 +1,26 @@
 # MCMC Methods for Inference in Hidden Markov Models
 
-Implementations and simulation studies of four core Monte Carlo sampling
-algorithms: Accept-Reject, Metropolis-Hastings (independent and random-walk),
-Gibbs sampling, and the slice sampler. These were developed alongside my Bachelor's
-thesis on inference in Hidden Markov Models (HMMs), with an applied example on
-a stochastic volatility model.
+Implementation and simulation of four Monte Carlo sampling
+algorithms: Accept-Reject, Metropolis-Hastings,
+Gibbs sampling, and the slice sampler. These were developed alongside my Bachelor's thesis on inference in Hidden Markov Models.
 
-## Why this matters
+## Background
 
-Inferring the hidden state distribution in an HMM (process called smoothing) generally has no closed form. When exact computation isn't available, simulation-based methods let us approximate the target distribution using a Markov chain whose stationary distribution matches it even though the samples aren't independent. This repo implements and validates
-the classical toolbox for doing exactly that.
+Inferring the hidden state distribution in a hidden Markov model (smoothing) generally has no closed form. Thus, simulation-based methods can be used to approximate the target distribution using a Markov chain, whose stationary distribution matches the hidden state's distribution, even though the samples aren't independent. This repo implements algorithms related to this problem.
 
-## What's implemented
+## Algorithms
 
-| Algorithm | Key idea | Handles high dimensions? |
+| Algorithm | main idea | appropriate for high-dims |
 |---|---|---|
-| Accept-Reject | Sample uniformly under an envelope, reject points outside the target's graph | No — acceptance rate decays as $\sigma^{-d}$ |
-| Metropolis-Hastings (independent / random-walk) | Build a reversible Markov chain via an accept/reject step on proposed moves | Yes, but sensitive to proposal choice/scale |
-| Gibbs Sampling | Update one coordinate at a time from its conditional distribution | Yes, when conditionals are tractable |
-| Slice Sampler | Gibbs sampling applied to the Accept-Reject geometric picture directly | Yes, avoids needing an explicit envelope |
+| Accept-Reject | uniform sampling under an envelope, reject points outside the target distribution graph | no; acceptance rate decays as $\sigma^{-d}$ |
+| Metropolis-Hastings (independent / random-walk) | reversible Markov chain build via an accept/reject steps on proposed moves | Yes; high sensitivity to initial scale |
+| Gibbs Sampling | update one coordinate at a time from conditional distribution | Yes; when conditionals are tractable |
+| Slice Sampler | Gibbs sampling applied to the Accept-Reject geometric picture | Yes; avoids needing an explicit envelope |
 
-Full derivations, correctness proofs (detailed balance, reversibility), and
-the curse-of-dimensionality analysis for Accept-Reject are in my thesis' summary
-[`docs/thesis_summary.md`](docs/thesis_summary.md) and thesis itself [`docs/thesis.pdf`](docs/thesis.pdf).
+Full explanation of the problem, the algorithms, why they work and full proofs can be found in my [`thesis`](docs/thesis.pdf).
 
 ## References
 
-This is an AI summary. Full citations in [`docs/references.md`](docs/references.md). This repository
-implements and extends the methodology developed in my Bachelor's thesis,
+This repository implements and extends the methodology developed in my Bachelor's thesis:
 *Markov Chain Monte Carlo Methods for Inference in Hidden Markov Models*
 (Freie Universität Berlin, 2024).
